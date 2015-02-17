@@ -81,7 +81,7 @@ messagebox.showinfo("Village", "He tells you he's the mayor and some villagers h
 
 while 1==1:
     messagebox.showinfo("Heal", "Your wounds are healed by the magic of this village.")
-    phealth = pmaxhealth
+    phealth = pmaxhp
     
     tchoice = simpledialog.askstring("Action", "What would you like to do? (shop/goto/talk/stats)")
     if tchoice == "shop":
@@ -122,7 +122,7 @@ while 1==1:
                     if pintelligence > 0:
                         messagebox.showinfo("Battle", "You use your intelligence to make basic " +
                                             "medicine out of the stuff lying around. You gain 5 health.")
-                        if phealth + 5 <= pmaxhealth:
+                        if phealth + 5 <= pmaxhp:
                             phealth += 5
                         else:
                             phealth = pmaxhp
