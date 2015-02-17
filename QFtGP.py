@@ -72,17 +72,17 @@ while mhealth > 0:
 messagebox.showinfo("Battle", "The battle is over.")
 
 messagebox.showinfo("Yay", "You fought well. Let's go to the local village.")
-messagebox.showinfo("Walking", "You arrive at the village. As you enter the village "+
-                    "you feel your wounds healing.")
-
-phealth = pmaxhp
 
 messagebox.showinfo("Village", "As you enter the village a man wearing brown bag thing " +
                     "for a shirt and a very obnoxious yellow hat approuches you.")
+
 messagebox.showinfo("Village", "He tells you he's the mayor and some villagers have been " +
                     "attacked in the local dark forest of doom and he wants your help.")
 
 while 1==1:
+    messagebox.showinfo("Heal", "Your wounds are healed by the magic of this village.")
+    phealth = pmaxhealth
+    
     tchoice = simpledialog.askstring("Action", "What would you like to do? (shop/goto/talk/stats)")
     if tchoice == "shop":
         messagebox.showinfo("Shop", "You walk up to the building with 'SHOP' written on it in red paint." +
