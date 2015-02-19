@@ -121,11 +121,13 @@ while 1==1:
                     messagebox.showinfo("Battle", "You have 0 potions.")
                     if pintelligence > 0:
                         messagebox.showinfo("Battle", "You use your intelligence to make basic " +
-                                            "medicine out of the stuff lying around. You gain 5 health.")
+                                            "medicine out of the stuff lying around.")
                         if phealth + 5 <= pmaxhp:
                             phealth += 5
+                            messagebox.showinfo("Battle", "You gained 5 health.")
                         else:
                             phealth = pmaxhp
+                            messagebox.showinfo("Battle", "You now have full health.")
                 elif bchoice == "fight":
                     break
                 else:
